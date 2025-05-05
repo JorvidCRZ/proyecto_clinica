@@ -1,0 +1,89 @@
+@import url(../../style.css);
+
+body {
+  background-image: url('loginefepa.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.login-box {
+  background-color: rgba(0, 0, 0, 0.8); 
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.login-box h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.login-box button,
+.btn-crear {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-continuar {
+  background-color: #007bff;
+}
+
+.btn-crear {
+  background-color: #28a745;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.login-box a {
+  color: #00aaff;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 10px;
+}

@@ -1,0 +1,117 @@
+@import url(../../style.css);
+
+.seccion,
+.bienvenida,
+.especialidades article,
+.contacto .contenedor {
+    justify-items: center;
+}
+
+.contenido-bienvenida,
+.contenido-contacto {
+    border: none;
+    margin: 50px 0;
+    padding: 20px 5%;
+    border-radius: 25px;
+    color: var(--negro);
+    background-color: var(--gris);
+}
+
+.contenido-especialidades {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.especialidades {
+    padding: 30px;
+    color: var(--blanco);
+    text-align-last: center;
+    background-color: var(--azul);
+}
+
+.especialidades article {
+    width: 350px;
+    height: auto;
+}
+
+.especialidades article:hover {
+    cursor: pointer;
+    transition: all 1s;
+    color: var(--negro);
+    filter: saturate(2);
+    border-radius: 20px;
+    background-color: var(--azulOscuro);
+}
+
+.especialidades h3 {
+    margin: 5px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.especialidades h4 {
+    font-weight: 900;
+}
+
+.contenido-especialidades img {
+    filter: invert(1);
+}
+
+.contenido-especialidades img:hover {
+    filter: brightness(0.5);
+}
+
+.contenido-contacto {
+    width: 50%;
+    display: flex;
+    padding: auto 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.info-izquierda {
+    justify-items: center;
+}
+
+.info-izquierda h3 {
+    font-size: 30px;
+}
+
+.info-izquierda .boton {
+    padding: 0;
+    width: 300px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: var(--azulOscuro);
+}
+
+.info-izquierda a {
+    padding: auto;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--blanco);
+    text-decoration: none;
+    background: none !important;
+}
+
+.info-izquierda .boton:hover {
+    transition: all 1s;
+    color: var(--gris);
+    background-color: var(--azul);
+}
+
+.info-derecha ul {
+    list-style: none;
+}
+
+.info-derecha li {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.info-derecha li:hover {
+    color: var(--azul);
+}

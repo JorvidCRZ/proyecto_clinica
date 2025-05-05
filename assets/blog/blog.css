@@ -1,0 +1,87 @@
+@import url(../../style.css);
+
+.titulo{
+    text-align: center;
+}
+
+.blog {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.noticia {
+    width: 350px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background: var(--blanco);
+    box-shadow: 2px 2px 10px var(--negro);
+}
+
+.noticia h2 ,.noticia h3 {
+    font-size: 20px;
+    color: #264653;
+}
+
+.noticia img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.blog h2{
+    font-size: 25px;
+    text-align: center;
+}
+.noticia{
+    margin: 50px;
+}
+.noticia p {
+    font-size: 17px;
+}
+
+.noticia p,.recomendaciones li p {
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 0.5px; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.noticia a {
+    padding: 10px;
+    display: block;
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #e76f51;
+}
+
+
+.noticia a:hover {
+    background-color: #d62828;
+}
+
+.lista-salud,.recomendaciones{
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.lista-salud li,.recomendaciones li {
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    background: #f8f9fa;
+    border-left: 4px solid #2a9d8f;
+    transition: background-color 0.3s ease;
+}
+
+.lista-salud li:hover,.recomendaciones li:hover {
+    cursor: pointer;
+    background-color: #d8e2dc;
+}

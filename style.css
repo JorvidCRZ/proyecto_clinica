@@ -1,0 +1,134 @@
+:root {
+    --negro: #000;
+    --gris: #EEEEEE;
+    --plomo: #e5e5e5;
+    --azul: #2B78E4;
+    --blanco: #FFFFFF;
+    --celeste: #8fddff;
+    --azulOscuro: #073763;
+    --grisOscuro: #767676;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: var(--negro);
+    background-color: var(--blanco);
+    font-family: Arial, sans-serif;
+}
+
+body::selection {
+    color: var(--gris);
+    background-color: var(--azulOscuro);
+}
+
+
+
+.navegacion {
+    width: 100%;
+    height: auto
+}
+
+.menu {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 20px 50px;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, var(--azul) 0%, var(--celeste) 100%);
+}
+
+.menu button {
+    border: none;
+    padding: inherit;
+    background: none;
+}
+
+.menu button img {
+    height: auto;
+    max-width: 200px;
+    object-fit: contain;
+    filter: brightness(100);
+}
+
+.menu button img:hover {
+    filter: brightness(0);
+}
+
+.menu li {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu li a {
+    font-weight: 700;
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    width: auto;
+    height: 40px;
+    font-size: 26px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    place-content: center;
+    color: var(--azulOscuro);
+    background-color: var(--gris);
+    transition: all 1ms ease-in-out;
+}
+
+.banner,
+.contenido-especialidades,
+.contacto .contenedor {
+    width: 100%;
+    max-height: 500px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gris);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--azul);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--azulOscuro);
+}
+
+footer {
+    display: flex;
+    padding: 20px 0;
+    font-size: 20px;
+    color: var(--blanco);
+    justify-content: space-between;
+    background: linear-gradient(90deg, var(--azulOscuro) 0%, var(--azul) 100%);
+}
+
+.copy {
+    margin: 0;
+    padding: 0 50px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.copy:hover {
+    color: var(--negro);
+}
