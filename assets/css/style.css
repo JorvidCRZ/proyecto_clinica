@@ -1,11 +1,11 @@
-@import url(/assets/css/general/barra-navegacion.css);
-@import url(/assets/css/general/estructura-general.css);
-@import url(/assets/css/general/variables.css);
+@import url(general/barra-navegacion.css);
+@import url(general/estructura-general.css);
+@import url(general/variables.css);
 
-@import url(/assets/css/pages/blog.css);
-@import url(/assets/css/pages/contacto.css);
-@import url(/assets/css/pages/inicio.css);
-@import url(/assets/css/pages/login.css);
-@import url(/assets/css/pages/nosotros.css);
-@import url(/assets/css/pages/servicios.css);
+@import url(pages/blog.css);
+@import url(pages/contacto.css);
+@import url(pages/inicio.css);
+@import url(pages/login.css);
+@import url(pages/nosotros.css);
+@import url(pages/servicios.css);
  

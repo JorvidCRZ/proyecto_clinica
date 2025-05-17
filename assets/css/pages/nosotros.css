@@ -43,7 +43,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    background-image: url("/assets/img/nosotros/fondo.webp");
+    background-image: url("../../img/nosotros/fondo.webp");
 }
 
 .nosotros-txt,.mision-txt,.vision-txt{
