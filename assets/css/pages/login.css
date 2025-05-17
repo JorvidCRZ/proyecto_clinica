@@ -1,0 +1,129 @@
+.main {
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1500px;
+    border-radius: 20px;
+}
+
+.login-card {
+    display: flex;
+    border-radius: 20px;
+    background-color: var(--plomo);
+}
+
+.login-img {
+    flex: 1;
+    background-color: var(--blanco);
+}
+
+.login-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-content {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+.login-content h2 {
+    margin-bottom: 15px;
+    color: var(--azul);
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.formulario { 
+    gap: 10px;
+    width: 70%;
+    display: flex;
+    margin-top: 15px;
+    place-self: center;
+    flex-direction: column;
+}
+
+.login-content input[type="text"],
+.login-content input[type="password"] {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.login-content button,
+.btn-crear {
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: var(--blanco);
+}
+
+.btn-continuar {
+    background-color: var(--azul);
+}
+
+.btn-crear {
+    width: 70%;
+    background-color: var(--verde);
+}
+
+.login-content a {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--celeste);
+}
+
+.login-content a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .login-box{
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-card {
+        margin: 2rem 0;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+      .login-box{
+        width: 95%;
+    }
+    .login-content{
+        padding: 2.5rem 0;
+    }
+    .login-content h2{
+        margin-top: 1rem;
+    }
+    .formulario{
+        width: 90%;
+    }
+    .btn-crear{
+        width: 90%;
+    }
+}

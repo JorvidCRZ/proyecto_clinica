@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="/assets/img/inicio/icono-clinica.webp" type="image/x-icon"/>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <title>Inicio Sesión</title>
+  </head>
+  <body>
+    <header>   
+      <nav class="navegacion">
+        <div class="contenedor-fondo"></div>
+        <div class="nav-header">
+          <button>
+            <span>
+              <a href="/index.html">
+                <img src="/assets/img/inicio/logo-clinica.webp"alt="logo" href="index.html"/>
+              </a>
+            </span>
+          </button>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">☰</label>
+        <ul class="menu">
+          <li><a href="/pages/servicios.html">Servicios</a></li>
+          <li><a href="/pages/nosotros.html">Nosotros</a></li>
+          <li><a href="/pages/blog.html">Blog/Noticias</a></li>
+          <li><a href="/pages/contacto.html">Contacto</a></li>
+          <li><a href="/pages/login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="login-box">
+        <div class="login-card">
+          <div class="login-img">
+            <img src="/assets/img/login/login-fondo.webp" alt="Imagen de inicio de sesión" />
+          </div>
+
+          <div class="login-content">
+             <h2>Inicio de sesión</h2>
+             <div class="social-icons">
+              <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook--v1.png" alt="Facebook"/>
+              <img src="https://img.icons8.com/ios-filled/30/ffffff/mac-os.png" alt="Apple"/>
+              <img src="https://img.icons8.com/ios-filled/30/ffffff/google-logo.png" alt="Google"/>
+            </div>
+
+            <form class="formulario">
+              <input type="text" placeholder="DNI" name="dni" required />
+              <input type="password" placeholder="Contraseña" name="password" required />
+              <button class="btn-continuar" type="submit">Continuar</button>
+            </form>
+
+            <a href="#">Recuperar contraseña</a>
+            <button class="btn-crear">Crea una cuenta</button>
+          </div>
+        </div>
+      </div> 
+    </main>
+
+    <footer>
+      <p class="copy">Todos los derechos reservados</p>
+      <p class="copy">2025. Clinica Tu Salud &copy;</p>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,210 @@
+.seccion,
+.bienvenida,
+.especialidades article,
+.contacto .contenedor {
+    justify-items: center;
+}
+
+.contenido-bienvenida,
+.contenido-contacto {
+    border: none;
+    margin: 50px 0;
+    padding: 20px 5%;
+    text-align: center;
+    border-radius: 25px;
+    color: var(--negro);
+    background-color: var(--gris);
+}
+.bienvenida .titulo{
+    margin: 2rem;
+}
+
+.titulo{
+    font-size: 75px;
+    color: var(--azul);
+}
+
+.contenido-especialidades {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.especialidades {
+    padding: 30px;
+    color: var(--blanco);
+    text-align-last: center;
+    background-color: var(--azul);
+}
+
+.especialidades article {
+    width: 350px;
+    height: auto;
+}
+
+.especialidades article:hover {
+    cursor: pointer;
+    transition: all 1s;
+    color: var(--negro);
+    filter: saturate(2);
+    border-radius: 20px;
+    background-color: var(--azul-oscuro);
+}
+
+.especialidades h3 {
+    margin: 5px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.especialidades h4 {
+    text-align: center;
+    font-weight: 900;
+}
+
+.contenido-especialidades img {
+    filter: invert(1);
+}
+
+.contenido-especialidades img:hover {
+    filter: brightness(0.5);
+}
+
+.contenido-contacto {
+    width: 50%;
+    display: flex;
+    padding: auto 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.info-izquierda {
+    justify-items: center;
+}
+
+.info-izquierda h3 {
+    font-size: 30px;
+}
+
+.info-izquierda .boton {
+    padding: 0;
+    width: 300px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: var(--azul-oscuro);
+}
+
+.info-izquierda a {
+    padding: auto;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--blanco);
+    text-decoration: none;
+    background: none !important;
+}
+
+.info-izquierda .boton:hover {
+    transition: all 1s;
+    color: var(--gris);
+    background-color: var(--azul);
+}
+
+.info-derecha ul {
+    list-style: none;
+}
+
+.info-derecha li {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.info-derecha li:hover {
+    color: var(--azul);
+}
+
+@media (max-width: 1441px) {
+    .contenido-contacto {
+        width: 80%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .especialidades h3, .especialidades h4{
+        margin: 1rem;
+    }
+
+    .especialidades p{
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .bienvenida{
+        width: 100%;
+        padding: 1rem;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+
+    .contenido-contacto {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .info-izquierda {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-derecha {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-izquierda h3, .info-derecha h3{
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 426px){
+
+    .especialidades{
+        height: 160vh;
+    }
+    
+     .especialidades article {
+        width: 250px;
+    }
+
+    .especialidades h3{
+        text-align: center;
+    }
+    .contenido-especialidades{
+        flex-direction: column;
+        display: flex;
+        align-items: center;   
+    }
+    .contenido-contacto{
+        padding:0;
+    }
+
+    .boton{
+        width: 100%;
+        display: block;
+    }
+
+    .info-izquierda .boton {
+        padding: 0;
+        width: 100%;
+        height: 100px;
+        border-radius: 0;
+        place-content: center;
+    }
+} 

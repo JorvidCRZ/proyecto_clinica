@@ -1,0 +1,94 @@
+*{
+     box-sizing: border-box;
+}
+
+html { 
+    scroll-behavior: smooth;
+    font-family: var(--fuente);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: var(--negro);
+    background-color: var(--blanco);
+    font-family: Arial, sans-serif;
+}
+
+body::selection {
+    color: var(--gris);
+    background-color: var(--azul-oscuro);
+}
+
+.banner,
+.contenido-especialidades,
+.contacto .contenedor {
+    width: 100%;
+    max-height: 500px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: var(--gris);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: var(--azul);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--azul-oscuro);
+}
+
+a {
+    text-decoration: none
+}
+
+footer {
+    display: flex;
+    padding: 20px 0;
+    font-size: 20px;
+    color: var(--blanco);
+    justify-content: space-between;
+    background: linear-gradient(90deg, var(--azul-oscuro) 0%, var(--azul) 100%);
+}
+
+footer .copy {
+    margin: 0;
+    padding: 0 50px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer .copy:hover {
+    color: var(--negro);
+}
+
+@media (max-width: 769px) {
+    body {
+        font-size: 20px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .copy {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        font-size: 15px;
+    }
+}

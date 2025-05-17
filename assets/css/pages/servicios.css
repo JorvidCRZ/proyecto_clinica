@@ -1,0 +1,48 @@
+ .titulo-servicio, .service-card h2 {
+    text-align: center;
+}
+
+.service-container {
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    justify-content: center;
+}
+
+.service-card {
+    padding: 1.5rem;
+    max-width: 350px;
+    border-radius: 8px;
+    background-color: var(--gris);
+    box-shadow: 0 4px 8px var(--gris);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.service-card h2 {
+    color: var(--azul);
+}
+
+.service-card p {
+    color: var(--negro);
+}
+
+
+@media (max-width: 1441px) {
+    .titulo-servicio{
+        text-align: center;
+        padding: 0 5rem;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .titulo-servicio{
+        padding: 0 1rem;
+    }
+}

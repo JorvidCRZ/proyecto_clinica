@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/img/inicio/icono-clinica.webp" type="image/x-icon"/>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <title>Contacto Clinica Tu Salud</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navegacion">
+        <div class="contenedor-fondo"></div>
+        <div class="nav-header">
+          <button>
+            <span>
+              <a href="/index.html">
+                <img src="/assets/img/inicio/logo-clinica.webp"alt="logo" href="index.html"/>
+              </a>
+            </span>
+          </button>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">☰</label>
+        <ul class="menu">
+          <li><a href="/pages/servicios.html">Servicios</a></li>
+          <li><a href="/pages/nosotros.html">Nosotros</a></li>
+          <li><a href="/pages/blog.html">Blog/Noticias</a></li>
+          <li><a href="/pages/contacto.html">Contacto</a></li>
+          <li><a href="/pages/login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <img src="/assets/img/contacto/clinica.webp" alt="Clinica Tu Salud" class="banner"/>
+      </div>
+      <h1 class="contacto-titulo titulo">Contacto</h1>
+      <p class="contacto-descripcion">
+        Si tienes alguna pregunta o necesitas más información, no dudes en
+        ponerte en contacto con nosotros.
+      </p>
+
+      <form action="enviar" method="post" class="formulario-contacto">
+        <div class="form-grupo">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            class="form-input"
+            required
+          />
+        </div>
+
+        <div class="form-grupo">
+          <label for="email" class="form-label">Correo electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            required
+          />
+        </div>
+
+        <div class="form-grupo">
+          <label for="mensaje" class="form-label">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="4"
+            class="form-textarea"
+            required
+          ></textarea>
+        </div>
+
+        <div class="agenda-cita">
+          <p class="agenda-titulo">Agenda tu cita:</p>
+          <button type="submit" class="agenda-boton">Contáctanos ahora</button>
+        </div>
+      </form>
+
+      <h2 class="horarios-titulo">Horarios de Atención</h2>
+      <table class="tabla-horarios">
+        <thead>
+          <tr>
+            <th>Especialidad</th>
+            <th>Días de la Semana</th>
+            <th>Horas de Disponibilidad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Medicina General</td>
+            <td>Lunes a Viernes</td>
+            <td>8:00 AM - 6:00 PM</td>
+          </tr>
+          <tr>
+            <td>Pediatría</td>
+            <td>Lunes a Sábado</td>
+            <td>9:00 AM - 3:00 PM</td>
+          </tr>
+          <tr>
+            <td>Odontología</td>
+            <td>Martes y Jueves</td>
+            <td>10:00 AM - 4:00 PM</td>
+          </tr>
+          <tr>
+            <td>Cardiología</td>
+            <td>Miércoles y Viernes</td>
+            <td>2:00 PM - 6:00 PM</td>
+          </tr>
+          <tr>
+            <td>Dermatología</td>
+            <td>Lunes y Miércoles</td>
+            <td>9:00 AM - 1:00 PM</td>
+          </tr>
+          <tr>
+            <td>Ginecología</td>
+            <td>Martes y Sábado</td>
+            <td>8:00 AM - 12:00 PM</td>
+          </tr>
+          <tr>
+            <td>Traumatología</td>
+            <td>Jueves y Viernes</td>
+            <td>3:00 PM - 7:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <p class="copy">Todos los derechos reservados</p>
+      <p class="copy">2025. Clinica Tu Salud &copy;</p>
+    </footer>
+  </body>
+</html>
