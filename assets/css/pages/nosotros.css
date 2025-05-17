@@ -1,9 +1,9 @@
 .links, .nosotros-enlace{
-    display: flex;
-    position: absolute;
     left: 0%;
     width: 100%;
+    display: flex;
     margin-top: 5px;
+    position: absolute;
     margin-bottom: 5px;
     justify-content: center;
 }
