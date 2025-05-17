@@ -1,11 +1,11 @@
-@import url(general/barra-navegacion.css);
-@import url(general/estructura-general.css);
-@import url(general/variables.css);
+@import url("general/barra-navegacion.css");
+@import url("general/estructura-general.css");
+@import url("general/variables.css");
 
-@import url(pages/blog.css);
-@import url(pages/contacto.css);
-@import url(pages/inicio.css);
-@import url(pages/login.css);
-@import url(pages/nosotros.css);
-@import url(pages/servicios.css);
+@import url("pages/blog.css");
+@import url("pages/contacto.css");
+@import url("pages/inicio.css");
+@import url("pages/login.css");
+@import url("pages/nosotros.css");
+@import url("pages/servicios.css");
  
