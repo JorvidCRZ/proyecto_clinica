@@ -1,4 +1,4 @@
- .titulo-servicio, .service-card h2 {
+.titulo-servicio {
     text-align: center;
 }
 
@@ -17,6 +17,9 @@
     background-color: var(--gris);
     box-shadow: 0 4px 8px var(--gris);
     transition: transform 0.3s ease;
+    a{
+        color: var(--negro);
+    }
 }
 
 .service-card:hover {
@@ -26,23 +29,17 @@
 
 .service-card h2 {
     color: var(--azul);
+    text-align: center;
 }
-
-.service-card p {
-    color: var(--negro);
-}
-
 
 @media (max-width: 1441px) {
-    .titulo-servicio{
-        text-align: center;
+    .titulo-servicio {
         padding: 0 5rem;
     }
 }
 
-
 @media (max-width: 425px) {
-    .titulo-servicio{
+    .titulo-servicio {
         padding: 0 1rem;
     }
 }

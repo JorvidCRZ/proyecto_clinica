@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <base href="/proyecto_clinica/"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/inicio/icono-clinica.webp" type="image/x-icon"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
     <title>Clinica Tu Salud</title>
 </head>
 
 <body>
-    <header id="enlaces-inicio">
-        <nav class="navegacion">
+    <header>
+        <nav class="navegacion" id="enlaces-inicio">
             <div class="contenedor-fondo"></div>
             <div class="nav-header">
               <button>
                 <span>
                   <a href="index.html">
-                <img src="assets/img/inicio/logo-clinica.webp"alt="logo"/>
-              </a>
+                    <img src="assets/img/inicio/logo-clinica.webp"alt="logo"/>
+                  </a>
                 </span>
               </button>
             </div>
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <label for="nav-toggle" class="nav-toggle-label">☰</label>
             <ul class="menu">
-              <li><a href="pages/servicios.html">Servicios</a></li>
-              <li><a href="pages/nosotros.html">Nosotros</a></li>
-              <li><a href="pages/blog.html">Blog/Noticias</a></li>
-              <li><a href="pages/contacto.html">Contacto</a></li>
-              <li><a href="pages/login.html">Login</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="blog.html">Blog/Noticias</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
     </header>
     <main class="nosotros">
         <div class="links">
             <nav class="nosotros-enlace">
-                <li><a href="pages/nosotros.html#nosotros">Nosotros</a></li>
-                <li><a href="pages/nosotros.html#historia">Historia</a></li>
-                <li><a href="pages/nosotros.html#equipo">Equipo</a></li>
-                <li><a href="pages/nosotros.html#galeria">Galeria</a></li>
-                <li><a href="pages/nosotros.html#ubicacion">Ubicacion</a></li>            
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#ubicacion">Ubicacion</a></li>            
             </nav>
         </div>
 
@@ -116,7 +115,7 @@
 
             <div class="imagen-full contenedor-ramas">
                 <div class="rama">
-                    <a href="pages/contacto.html">
+                    <a href="contacto.html">
                         <img src="assets/img/nosotros/medico-general.webp" alt="Medico General">
                     </a> 
                     <section>
@@ -130,7 +129,7 @@
                 </div>
 
                 <div class="rama">
-                    <a href="pages/contacto.html">  
+                    <a href="contacto.html">  
                         <img src="assets/img/nosotros/pediatra.webp" alt="Pediatra">
                     </a>
                     <section>
@@ -144,7 +143,7 @@
                 </div>
 
                 <div class="rama">
-                    <a href="pages/contacto.html"> 
+                    <a href="contacto.html"> 
                         <img src="assets/img/nosotros/ginecologo.webp" alt="Ginecologo">
                     </a>
                     <section>
@@ -158,7 +157,7 @@
                 </div>
 
                 <div class="rama">
-                    <a href="pages/contacto.html">
+                    <a href="contacto.html">
                         <img src="assets/img/nosotros/odontologo.webp" alt="Odontologo">
                     </a>
                     <section>
@@ -172,7 +171,7 @@
                 </div>
 
                 <div class="rama">
-                    <a href="pages/contacto.html">
+                    <a href="contacto.html">
                         <img src="assets/img/nosotros/traumatologo.webp" alt="Traumatologo">
                     </a>
                     <section> 
@@ -186,7 +185,7 @@
                 </div>
 
                 <div class="rama">
-                    <a href="pages/contacto.html">
+                    <a href="contacto.html">
                         <img src="assets/img/nosotros/cardiologo.webp" alt="Cardiologo">
                     </a>
                     <section>
@@ -200,7 +199,7 @@
                 </div>
 
                 <div class="rama">
-                    <a href="pages/contacto.html">  
+                    <a href="contacto.html">  
                         <img src="assets/img/nosotros/dermatologo.webp" alt="Dermatologo">
                     </a>
                     <section>
@@ -214,7 +213,7 @@
                 </div>
 
                 <div class="rama">
-                    <a href="pages/contacto.html">
+                    <a href="contacto.html">
                     <img src="assets/img/nosotros/psicologo.webp" alt="Psicologo">
                     </a>
                     <section>
@@ -228,7 +227,7 @@
                 </div>
 
                 <div class="rama">
-                    <a href="pages/contacto.html">
+                    <a href="contacto.html">
                         <img src="assets/img/nosotros/anestesiologo.webp" alt="Psicologo">
                     </a>
                     <section>
@@ -340,13 +339,14 @@
         </div>
 
         <div class="icono_fijo">
-            <a href="pages/nosotros.html#enlaces-inicio" ><img src="assets/img/nosotros/icono-volver.webp" alt="boton-subir"></a>
+            <a href="#enlaces-inicio" ><img src="assets/img/nosotros/icono-volver.webp" alt="boton-subir"></a>
         </div>
-    </main>
     
+    </main>
     <footer>
         <p class="copy">Todos los derechos reservados</p>
         <p class="copy">2025. Clinica Tu Salud &copy;</p>
     </footer>
 </body>
+
 </html>

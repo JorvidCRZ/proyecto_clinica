@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/inicio/icono-clinica.webp" type="image/x-icon"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <title>Intranet</title>
+</head>
+<body>
+  <header>   
+    <nav class="navegacion">
+      <div class="contenedor-fondo"></div>
+      <div class="nav-header">
+        <button>
+          <span>
+            <a href="index.html">
+              <img src="assets/img/inicio/logo-clinica.webp"alt="logo"/>
+            </a>
+          </span>
+        </button>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">☰</label>
+      <ul class="menu">
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="blog.html">Blog/Noticias</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.html">Salir</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bienvenida">
+      <button class="btn-continuar regresar" onclick="salir()">◀️ Cerrar Sesion</button>
+      <h1>Bienvenido a la Intranet Administrativa</h1>
+      <p>Acceda a los módulos de gestión interna de la Clínica Tu Salud.</p>
+    </section>
+
+    <section class="modulos-intranet">
+      <h2>Módulos disponibles</h2>
+      <div class="modulos-grid">
+        <a href="#" class="modulo-card">🩺 Gestión de Pacientes</a>
+        <a href="#" class="modulo-card">📅 Gestión de Citas</a>
+        <a href="#" class="modulo-card">👨‍⚕️ Personal y Recursos Humanos</a>
+        <a href="#" class="modulo-card">📦 Inventario y Medicamentos</a>
+        <a href="#" class="modulo-card">📊 Reportes y Estadísticas</a>
+        <a href="#" class="modulo-card">⚙️ Configuración del Sistema</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="copy">Todos los derechos reservados</p>
+    <p class="copy">2025. Clinica Tu Salud &copy;</p>
+  </footer>
+</body>
+<script src="assets/js/login.js"></script>
+</html>

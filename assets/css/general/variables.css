@@ -1,4 +1,5 @@
 :root {
+    --rojo: #ba0f0f;
     --negro: #000;
     --gris: #EEEEEE;
     --azul: #2B78E4;
@@ -8,6 +9,7 @@
     --celeste: #8fddff;
     --azul-oscuro: #073763;
     --gris-oscuro: #767676;
+    --verde-oscuro: #0a7623;
     --transparente: #ffffffa7;
     --transparente-oscuro: rgba(0, 0, 0, 0.8);
     --fuente-principal: 'Arial', sans-serif;

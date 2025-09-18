@@ -1,6 +1,5 @@
 .main {
     display: flex;
-    min-height: 80vh;
     align-items: center;
     justify-content: center;
 }
@@ -8,9 +7,9 @@
 .login-box {
     padding: 0;
     width: 100%;
-    overflow: hidden;
     max-width: 1500px;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .login-card {
@@ -56,15 +55,14 @@
     flex-direction: column;
 }
 
-.login-content input[type="text"],
-.login-content input[type="password"] {
+.login-content input {
     border: none;
     padding: 10px;
     border-radius: 5px;
 }
 
-.login-content button,
-.btn-crear {
+.login-content input[type="button"],
+.btn-crear,.btn-continuar {
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -77,11 +75,17 @@
 
 .btn-continuar {
     background-color: var(--azul);
+    &:hover {
+        background-color: var(--azul-oscuro);
+    }
 }
 
 .btn-crear {
     width: 70%;
     background-color: var(--verde);
+    &:hover {
+        background-color: var(--verde-oscuro);
+    }
 }
 
 .login-content a {
@@ -98,7 +102,7 @@
 }
 
 @media (max-width: 1024px) {
-    .login-box{
+    .login-box {
         width: 80%;
     }
 }
@@ -111,19 +115,19 @@
 }
 
 @media (max-width: 425px) {
-      .login-box{
+    .login-box {
         width: 95%;
     }
-    .login-content{
+    .login-content {
         padding: 2.5rem 0;
     }
-    .login-content h2{
+    .login-content h2 {
         margin-top: 1rem;
     }
-    .formulario{
+    .formulario {
         width: 90%;
     }
-    .btn-crear{
+    .btn-crear {
         width: 90%;
     }
 }

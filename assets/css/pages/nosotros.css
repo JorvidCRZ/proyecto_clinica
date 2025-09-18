@@ -1,14 +1,14 @@
-.links, .nosotros-enlace{
+.links,
+.nosotros-enlace {
     display: flex;
     position: absolute;
-    left: 0%;
+    left: 0;
     width: 100%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px 0;
     justify-content: center;
 }
 
-.nosotros-enlace li{
+.nosotros-enlace li {
     width: 100%;
     margin: 0 10px;
     list-style: none;
@@ -16,14 +16,14 @@
     text-align: center;
 }
 
-.nosotros-enlace li:hover{
+.nosotros-enlace li:hover {
     color: var(--blanco);
     transition: 0.2s ease-in-out;
     background-color: var(--azul);
-    box-shadow: 0 4px 10px var(--negro); 
+    box-shadow: 0 4px 10px var(--negro);
 }
 
-.nosotros-enlace li a{
+.nosotros-enlace li a {
     width: 100%;
     display: block;
     cursor: pointer;
@@ -36,17 +36,20 @@
     transition: background-color 0.3s ease;
 }
 
-.nosotros-content{
+.nosotros-content {
     width: 100%;
     font-size: 20px;
     line-height: 1.8;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-image: url("../../img/nosotros/fondo.webp");
+    background: url("../../img/nosotros/fondo.webp") center top/cover no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
 }
 
-.nosotros-txt,.mision-txt,.vision-txt{
+.nosotros-txt,
+.mision-txt,
+.vision-txt {
     display: flex;
     font-weight: 600;
     text-align: justify;
@@ -55,71 +58,80 @@
     text-shadow: 1px 1px 3px var(--blanco);
 }
 
-.nosotros-txt p,.mision-txt p,.vision-txt p, .historia-txt p, 
-.historia-img p,.equipo-txt p,.gps-texto{
+.nosotros-txt {
+    grid-column: 1 / 3;
+    padding: 4% 15%;
+    align-items: center;
+}
+
+.mision-txt,
+.vision-txt {
+    padding: 2% 5%;
+    margin: 0;
+    align-items: flex-start;
+}
+
+.vision-txt {
+    align-items: flex-end;
+}
+
+.nosotros-txt p,
+.mision-txt p,
+.vision-txt p,
+.historia-txt p,
+.historia-img p,
+.equipo-txt p,
+.gps-texto {
     padding: 1.5rem;
     border-radius: 20px;
     background-color: var(--transparente);
 }
 
- .historia-txt p, .historia-img p,.equipo-txt p,.gps-texto{
+.historia-txt p,
+.historia-img p,
+.equipo-txt p,
+.gps-texto {
     background-color: var(--gris) !important;
- }
-
-.nosotros-txt{
-    padding: 4% 15%;
-    align-items: center;
 }
 
-.mision-txt{
-    padding: 2% 15%;
-    margin-right: 20%;
-    align-items:flex-start;
-}
-
-.vision-txt{
-    padding: 2% 15%;
-    margin-left: 20%;
-    align-items: flex-end;
-}
-
-span{
+span {
     color: var(--azul);
     text-shadow: 2px 2px 4px var(--blanco);
 }
 
-.historia-content, .equipo-content,.galeria-content{
+.historia-content,
+.equipo-content,
+.galeria-content {
     padding: 4% 15%;
     font-size: 20px;
     line-height: 1.8;
     text-align: initial;
 }
 
-.historia-img{
+.historia-img {
     width: 50%;
     display: flex;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: 50px auto 0 auto;
     align-items: center;
     flex-direction: column;
     text-align: center !important;
 }
 
-.historia-img img{
+.historia-img img {
     height: auto;
     max-width: 80vw;
     border-radius: 15px;
     box-shadow: 0 4px 10px var(--negro);
 }
 
-.equipo-txt{
+.equipo-txt {
     display: flex;
-    margin-right:0%;
+    margin-right: 0;
     text-align: justify;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    color:var(--gris-oscuro);
+    color: var(--gris-oscuro);
 }
 
 .contenedor-ramas {
@@ -150,7 +162,7 @@ span{
     display: block;
 }
 
-.rama section { 
+.rama section {
     flex-grow: 1;
     padding: 15px;
     display: flex;
@@ -174,7 +186,7 @@ span{
     color: var(--negro);
 }
 
-.nosotros .titulo{
+.nosotros .titulo {
     font-size: 75px;
     line-height: 1.3;
     color: var(--azul);
@@ -217,42 +229,42 @@ span{
     color: var(--gris-oscuro);
 }
 
-.galeria-content h1{
+.galeria-content h1 {
     text-align: center;
 }
 
-.gps-content{
+.gps-content {
     padding: 4% 15%;
     font-size: 20px;
     line-height: 1.8;
     text-align: center;
 }
 
-.gps-mapa iframe{
+.gps-mapa iframe {
     width: 90%;
     margin-top: 70px;
     align-items: center;
     justify-content: center;
-    gap: 40px; 
+    gap: 40px;
     border-radius: 25px;
     box-shadow: 0 4px 10px var(--negro);
-    
 }
 
 .icono_fijo img {
     width: 7rem;
-    right: 25px;  
-    bottom: 65px; 
+    right: 25px;
+    bottom: 65px;
     z-index: 100;
     position: fixed;
 }
 
-.icono_fijo img:hover{
+.icono_fijo img:hover {
     filter: drop-shadow(2px 4px 6px black);
 }
 
 @media (max-width: 1025px) {
-    .links, .nosotros-enlace {
+    .links,
+    .nosotros-enlace {
         height: 5vw;
         width: 100%;
         display: flex;
@@ -267,43 +279,54 @@ span{
         height: 5vw;
         place-content: center;
     }
+    .nosotros-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .nosotros-txt {
+        grid-column: 1 / 2;
+    }
 }
 
 @media (max-width: 769px) {
-    .nosotros-txt, .mision-txt, .vision-txt {
+    .nosotros-txt,
+    .mision-txt,
+    .vision-txt {
         padding: 1rem;
     }
 
-    .historia-content{
+    .historia-content {
         display: flex;
         flex-direction: column;
-         align-items: center;
+        align-items: center;
     }
 
-    .historia-content, .equipo-content,.galeria-content{
+    .historia-content,
+    .equipo-content,
+    .galeria-content {
         padding: 1rem 0.5rem;
     }
 
-    .nosotros .titulo{
+    .nosotros .titulo {
         font-size: 45px;
     }
 
-    .historia-img{
+    .historia-img {
         width: 80%;
         margin: 0;
     }
 
-    .historia-img p{
+    .historia-img p {
         width: 100%;
         margin: 3rem 0;
     }
 
-    .descripcion{
+    .descripcion {
         width: 80%;
         margin: 0;
     }
 
-    .galeria-content{
+    .galeria-content {
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -320,9 +343,9 @@ span{
         flex-direction: column;
     }
 
-     .tarjeta-horizontal h2{
+    .tarjeta-horizontal h2 {
         text-align: center;
-     }
+    }
 
     .tarjeta-horizontal img {
         width: 80%;
@@ -334,11 +357,11 @@ span{
     .gps-content {
         padding: 0;
     }
-  
+
     .icono_fijo img {
         width: 5rem;
-        right: 10px;  
-        bottom: 10px; 
+        right: 10px;
+        bottom: 10px;
     }
 }
 
@@ -360,7 +383,7 @@ span{
         flex-direction: column;
     }
 
-    .nosotros-content{
+    .nosotros-content {
         margin: 11rem 0;
     }
 
@@ -370,26 +393,26 @@ span{
         border-bottom: 3px solid var(--transparente);
     }
 
-    .nosotros-enlace li a{
+    .nosotros-enlace li a {
         font-size: 20px;
         color: var(--blanco);
     }
 
-    .nosotros-enlace li:hover{
+    .nosotros-enlace li:hover {
         color: var(--blanco);
         background-color: var(--celeste);
-        box-shadow: 0 4px 10px var(--negro); 
+        box-shadow: 0 4px 10px var(--negro);
     }
 
-    .contenedor-ramas p{
+    .contenedor-ramas p {
         width: 100%;
     }
 
-     .tarjeta-horizontal .descripcion h2 {
+    .tarjeta-horizontal .descripcion h2 {
         font-size: 30px;
     }
 
-    .tarjeta-horizontal .descripcion p{
+    .tarjeta-horizontal .descripcion p {
         font-size: 18px;
         width: 100%;
     }
@@ -401,31 +424,38 @@ span{
     }
 }
 
-@media (max-width: 380px){
-    .nosotros .titulo{
+@media (max-width: 380px) {
+    .nosotros .titulo {
         font-size: 25px;
     }
 
-    .mision-txt .titulo{
+    .mision-txt .titulo {
         margin-left: 1rem;
     }
 
-    .nosotros-txt, .mision-txt, .vision-txt{
+    .nosotros-txt,
+    .mision-txt,
+    .vision-txt {
         padding: 0;
         margin: 0;
         text-align: center;
         font-size: 15px;
     }
-    .mision-txt h2, .vision-txt h1{
+    .mision-txt h2,
+    .vision-txt h1 {
         display: inline-block;
         align-self: center;
     }
 
-    .historia-content, .equipo-content,.galeria-content{
+    .historia-content,
+    .equipo-content,
+    .galeria-content {
         padding: 0;
     }
 
-    .historia-txt p, .historia-img p, .equipo-content p{
+    .historia-txt p,
+    .historia-img p,
+    .equipo-content p {
         font-size: 15px;
     }
 
@@ -433,7 +463,7 @@ span{
         font-size: 25px;
     }
 
-    .tarjeta-horizontal .descripcion p{
+    .tarjeta-horizontal .descripcion p {
         font-size: 15px;
         width: 100%;
     }
@@ -444,11 +474,7 @@ span{
         object-fit: cover;
         border-radius: 10px;
     }
-
-}
-
-@media (max-width: 380px){
-    .links{
+    .links {
         height: 60vw;
     }
 }

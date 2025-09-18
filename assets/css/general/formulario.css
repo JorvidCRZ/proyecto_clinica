@@ -1,0 +1,111 @@
+.formulario span,.formulario-contacto span {
+    color: var(--rojo);
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.formulario-contacto {
+    padding: 20px;
+    margin: 4rem auto;
+    max-width: 700px;
+    border-radius: 20px;
+    background: var(--blanco);
+    border: 1px solid var(--gris);
+    box-shadow: 0 2px 4px var(--gris-oscuro);
+    h2{
+        text-align: center;
+        color: var(--gris-oscuro);
+        margin-bottom: 20px;
+    }
+}
+
+.form-grupo {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--gris-oscuro);
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 1px solid var(--gris-oscuro);
+    background-color: var(--blanco);
+    color: var(--gris-oscuro);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    cursor: pointer;
+}
+
+
+.form-select:focus {
+    border-color: var(--azul);
+    box-shadow: 0 0 5px var(--azul-oscuro);
+    outline: none;
+}
+
+.form-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--azul); /* Cambia el color del checkbox marcado */
+  cursor: pointer;
+}
+
+.form-checkbox {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid var(--gris-oscuro);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: var(--azul);
+    box-shadow: 0 0 5px var(--azul-oscuro);
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px; 
+  box-sizing: border-box;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  color: var(--gris-oscuro);
+  font-size: 1.2rem;
+  cursor: pointer;
+  user-select: none;
+}

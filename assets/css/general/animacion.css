@@ -1,0 +1,23 @@
+
+.info-derecha ul li {
+  animation: colorCambio 3s infinite alternate;
+  text-decoration: none;
+}
+
+@keyframes colorCambio {
+  0% {
+    color: var(--negro);
+  }
+  25%{
+    color: var(--azulOscuro);
+  }
+  50%{
+    color: var(--azul);
+  }
+  75%{
+    color: var(--celeste);
+  }
+  100% {
+    color :var(--grisClaro)
+  }
+}

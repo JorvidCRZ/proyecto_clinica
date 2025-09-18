@@ -12,48 +12,6 @@ h2.horarios-titulo {
     color: var(--gris-oscuro);
 }
 
-.formulario-contacto {
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 700px;
-    border-radius: 20px;
-    background: var(--blanco);
-    border: 1px solid var(--gris);
-    box-shadow: 0 2px 4px var(--gris-oscuro);
-}
-
-.form-grupo {
-    margin-bottom: 15px;
-}
-
-.form-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: var(--gris-oscuro);
-}
-
-.form-input,
-.form-textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    border-radius: 4px;
-    box-sizing: border-box;
-    border: 1px solid var(--gris-oscuro);
-}
-
-.form-input:focus,
-.form-textarea:focus {
-    outline: none;
-    border-color: var(--azul);
-    box-shadow: 0 0 5px var(--azul-oscuro)
-}
-
-.form-textarea {
-    resize: vertical;
-}
-
 .agenda-cita {
     padding: 20px;
     max-width: 640px;
@@ -68,7 +26,7 @@ h2.horarios-titulo {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--negro);
-    margin: 0px 0px 20px;
+    margin: 0 0 20px;
 }
 
 .agenda-boton {
@@ -120,7 +78,7 @@ h2.horarios-titulo {
 }
 
 @media (max-width: 1025px) {
-    .tabla-horario{
+    .tabla-horarios {
         font-size: 18px;
     } 
 }

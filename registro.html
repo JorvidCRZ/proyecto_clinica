@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - Clínica Tu Salud</title>
+    <link rel="shortcut icon" href="assets/img/inicio/icono-clinica.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navegacion">
+            <div class="contenedor-fondo"></div>
+            <div class="nav-header">
+                <button>
+                    <span>
+                        <a href="index.html">
+                            <img src="assets/img/inicio/logo-clinica.webp" alt="logo" />
+                        </a>
+                    </span>
+                </button>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">☰</label>
+            <ul class="menu">
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog/Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button class="btn-continuar regresar" onclick="location.href='login.html'">◀️ Regresar</button>
+        <form class="formulario-contacto" id="formRegistro" onsubmit="registrarUsuario(event)">
+            <h2>Crear Cuenta</h2>
+
+            <div class="form-grupo">
+                <label class="form-label" for="nombre">Nombre completo</label>
+                <input class="form-input" type="text" id="nombre" required />
+                <span id="nombreMsg"></span>
+            </div>
+
+            <div class="form-grupo">
+                <label class="form-label" for="email">Correo electrónico</label>
+                <input class="form-input" type="email" id="email" required />
+                <span id="emailMsg"></span>
+            </div>
+
+            <div class="form-grupo">
+                <label class="form-label" for="telefono">Teléfono</label>
+                <input class="form-input" type="tel" id="telefono" pattern="[0-9]{9}" placeholder="Ej: 987654321"
+                    required />
+                <span id="telefonoMsg"></span>
+            </div>
+
+            <div class="form-grupo">
+                <label class="form-label" for="genero">Género</label>
+                <select class="form-select" id="genero" required>
+                    <option value="">Seleccione</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <span id="generoMsg"></span>
+            </div>
+
+            <div class="form-grupo">
+                <label class="form-label" for="fechaNacimiento">Fecha de nacimiento</label>
+                <input class="form-input" type="date" id="fechaNacimiento" required />
+                <span id="fechaMsg"></span>
+            </div>
+
+            <div class="form-grupo">
+                <label class="form-label" for="contrasena">Contraseña</label>
+                <input class="form-input" type="password" id="contrasena" required minlength="6" />
+                <span id="contrasenaMsg"></span>
+            </div>
+
+            <div class="form-grupo">
+                <label class="form-label" for="confirmar">Confirmar contraseña</label>
+                <input class="form-input" type="password" id="confirmar" required />
+                <span id="confirmarMsg"></span>
+            </div>
+
+            <div class="form-checkbox">
+                <input type="checkbox" id="terminos" required />
+                <label for="terminos">Acepto los <a href="#">términos y condiciones</a></label>
+                <span id="terminosMsg"></span>
+            </div>
+            
+            <button class="agenda-boton" type="submit">Registrarse</button>
+            <div id="mensaje"></div>
+        </form>
+    </main>
+    <footer>
+        <p class="copy">Todos los derechos reservados</p>
+        <p class="copy">2025. Clinica Tu Salud &copy;</p>
+    </footer>
+</body>
+<script src="assets/js/validacion.js"></script>
+<script src="assets/js/registro.js"></script>
+
+</html>

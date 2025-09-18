@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <base href="/proyecto_clinica/"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/img/inicio/icono-clinica.webp" type="image/x-icon"/>
     <link rel="stylesheet" href="assets/css/style.css"/>
     <title>Contacto Clinica Tu Salud</title>
@@ -25,11 +24,11 @@
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label">☰</label>
         <ul class="menu">
-          <li><a href="pages/servicios.html">Servicios</a></li>
-          <li><a href="pages/nosotros.html">Nosotros</a></li>
-          <li><a href="pages/blog.html">Blog/Noticias</a></li>
-          <li><a href="pages/contacto.html">Contacto</a></li>
-          <li><a href="pages/login.html">Login</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="blog.html">Blog/Noticias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="login.html">Login</a></li>
         </ul>
       </nav>
     </header>
@@ -43,38 +42,23 @@
         ponerte en contacto con nosotros.
       </p>
 
-      <form action="enviar" method="post" class="formulario-contacto">
+      <form class="formulario-contacto" id="formContacto">
         <div class="form-grupo">
-          <label for="nombre" class="form-label">Nombre:</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            class="form-input"
-            required
-          />
+          <label for="nombre" class="form-label">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre" class="form-input" required/>
+          <span id="nombreMsg"></span>
         </div>
 
         <div class="form-grupo">
           <label for="email" class="form-label">Correo electrónico:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="form-input"
-            required
-          />
+          <input type="email" id="email" name="email" class="form-input" required/>
+          <span id="emailMsg"></span>
         </div>
 
         <div class="form-grupo">
           <label for="mensaje" class="form-label">Mensaje:</label>
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            rows="4"
-            class="form-textarea"
-            required
-          ></textarea>
+          <textarea id="mensaje" name="mensaje" rows="4" class="form-textarea" required></textarea>
+          <span id="mensajeMsg"></span>
         </div>
 
         <div class="agenda-cita">
@@ -135,5 +119,16 @@
       <p class="copy">Todos los derechos reservados</p>
       <p class="copy">2025. Clinica Tu Salud &copy;</p>
     </footer>
+
+  <dialog id="dialogModal">
+    <h2>✅ Información enviada</h2>
+    <p><strong>Nombre:</strong> <span id="modalNombre"></span></p>
+    <p><strong>Correo:</strong> <span id="modalCorreo"></span></p>
+    <p><strong>Mensaje:</strong> <span id="modalMensaje"></span></p>
+    <button class="modal-cerrar" onclick="dialogModal.close()">X</button>
+  </dialog>
+
   </body>
+  <script src="assets/js/modal.js"></script>
 </html>
+
